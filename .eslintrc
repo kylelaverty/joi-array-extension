@@ -1,0 +1,52 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        "callback-return": [
+            "error"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "func-style": [
+            "error",
+            "expression"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "no-console": [
+            "off"
+        ],
+        "no-var": [
+            "warn"
+        ],
+        "prefer-arrow-callback": [
+            "error"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    },
+    "parserOptions": {
+        "ecmaVersion": 8
+    }
+}

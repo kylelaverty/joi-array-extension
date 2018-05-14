@@ -1,9 +1,11 @@
 {
-    "name": "joi-string-extensions",
-    "description": "Joi extension for strings",
-    "version": "0.5.0",
-    "homepage": "https://github.com/kylelaverty/joi-string-extensions",
-    "repository": "git://github.com/kylelaverty/joi-string-extensions",
+    "name": "@kylelaverty/joi-array-extensions",
+    "description": "Joi extension for arrays",
+    "version": "0.1.0",
+    "homepage": "https://github.com/kylelaverty/joi-array-extensions",
+    "repository": "git://github.com/kylelaverty/joi-array-extensions",
+    "bugs": "https://github.com/kylelaverty/joi-array-extensions/issues",
+    "author": "Kyle Laverty",
     "main": "lib/index.js",
     "keywords": [
         "schema",
@@ -20,13 +22,17 @@
         "joi": ">=10.3.0"
     },
     "devDependencies": {
-        "joi": "11.x.x"
+        "joi": "11.x.x",
+        "nyc": "11.7.3",
+        "mocha": "5.1.1",
+        "coveralls": "3.0.1",
+        "eslint": "4.19.1",
+        "chai": "4.1.2"
     },
     "scripts": {
-        "test": "lab -t 100 -a code -L -I 'URL,URLSearchParams'",
-        "test-debug": "node $NODE_DEBUG_OPTION ./node_modules/.bin/lab -a code",
-        "test-cov-html": "lab -r html -o coverage.html -a code",
-        "version": "npm run toc && git add API.md README.md"
+        "lint": "eslint .",
+        "test": "nyc --all mocha --recursive ./tests",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
     "license": "BSD-3-Clause"
 }
