@@ -1,0 +1,32 @@
+{
+    "name": "joi-string-extensions",
+    "description": "Joi extension for strings",
+    "version": "0.5.0",
+    "homepage": "https://github.com/kylelaverty/joi-string-extensions",
+    "repository": "git://github.com/kylelaverty/joi-string-extensions",
+    "main": "lib/index.js",
+    "keywords": [
+        "schema",
+        "validation",
+        "string",
+        "parse",
+        "joi",
+        "extension"
+    ],
+    "engines": {
+        "node": ">=4.0.0"
+    },
+    "peerDependencies": {
+        "joi": ">=10.3.0"
+    },
+    "devDependencies": {
+        "joi": "11.x.x"
+    },
+    "scripts": {
+        "test": "lab -t 100 -a code -L -I 'URL,URLSearchParams'",
+        "test-debug": "node $NODE_DEBUG_OPTION ./node_modules/.bin/lab -a code",
+        "test-cov-html": "lab -r html -o coverage.html -a code",
+        "version": "npm run toc && git add API.md README.md"
+    },
+    "license": "BSD-3-Clause"
+}
