@@ -1,10 +1,10 @@
 {
-    "name": "@klaverty/joi-array-extensions",
+    "name": "joi-array-extension",
     "description": "Joi extension for arrays",
     "version": "0.1.0",
-    "homepage": "https://github.com/kylelaverty/joi-array-extensions",
-    "repository": "git://github.com/kylelaverty/joi-array-extensions",
-    "bugs": "https://github.com/kylelaverty/joi-array-extensions/issues",
+    "homepage": "https://github.com/kylelaverty/joi-array-extension",
+    "repository": "git://github.com/kylelaverty/joi-array-extension",
+    "bugs": "https://github.com/kylelaverty/joi-array-extension/issues",
     "author": "Kyle Laverty <info@kylelaverty.ca>",
     "main": "lib/index.js",
     "keywords": [

@@ -1,9 +1,9 @@
-# joi-array-extensions
+# joi-array-extension
 
 Joi extensions for extra string rules.
 
-[![npm version](https://badge.fury.io/js/%40klaverty%2Fjoi-array-extensions.svg)](http://badge.fury.io/js/joi-array-extensions)
-[![Build Status](https://secure.travis-ci.org/kylelaverty/joi-array-extensions.svg?branch=master)](http://travis-ci.org/kylelaverty/joi-array-extensions)
+[![npm version](https://badge.fury.io/js/%40klaverty%2Fjoi-array-extension.svg)](http://badge.fury.io/js/joi-array-extension)
+[![Build Status](https://secure.travis-ci.org/kylelaverty/joi-array-extension.svg?branch=master)](http://travis-ci.org/kylelaverty/joi-array-extension)
 
 Lead Maintainer: [Kyle Laverty](https://github.com/kylelaverty)
 
@@ -17,11 +17,11 @@ Usage is a two steps process. First, a schema is constructed using the provided 
 
 ```js
 const BaseJoi = require('joi');
-const Extension = require('joi-array-extensions');
+const Extension = require('joi-array-extension');
 const Joi = BaseJoi.extend(Extension);
 
 const schema = Joi.array().seperator(',').items(...);
 ```
 
 # API
-See the [API Reference](https://github.com/kylelaverty/joi-array-extensions/blob/master/API.md).
+See the [API Reference](https://github.com/kylelaverty/joi-array-extension/blob/master/API.md).
