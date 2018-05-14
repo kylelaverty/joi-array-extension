@@ -86,5 +86,17 @@ describe('string', () => {
                 done();
             });
         });
+
+        it('validates element number, returns error', (done) => {
+            const schema = Joi.array()
+                .optional()
+                .seperator(',');
+            schema.validate(500, (err, value) => {
+                expect(err).to.not.be.null;
+                expect(value).to.not.be.null;
+                expect(err.message).to.equal('"value" must be an array');
+                done();
+            });
+        });
     });
 });
