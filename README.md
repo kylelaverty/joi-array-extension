@@ -2,7 +2,7 @@
 
 Joi extensions for extra string rules.
 
-[![npm version](https://badge.fury.io/js/%40klaverty%2Fjoi-array-extension.svg)](http://badge.fury.io/js/joi-array-extension)
+[![npm version](https://badge.fury.io/js/joi-array-extension.svg)](http://badge.fury.io/js/joi-array-extension)
 [![Build Status](https://secure.travis-ci.org/kylelaverty/joi-array-extension.svg?branch=master)](http://travis-ci.org/kylelaverty/joi-array-extension)
 
 Lead Maintainer: [Kyle Laverty](https://github.com/kylelaverty)
