@@ -9,7 +9,7 @@ describe('string', () => {
     describe('split', () => {
         it('validates an empty string, returns error', (done) => {
             const schema = Joi.array()
-                .seperator(',');
+                .separator(',');
             schema.validate('', (err, value) => {
                 expect(err).to.be.null;
                 expect(value).to.be.empty;
@@ -20,7 +20,7 @@ describe('string', () => {
         it('validates an empty optional string, returns error', (done) => {
             const schema = Joi.array()
                 .optional()
-                .seperator(',');
+                .separator(',');
             schema.validate('', (err, value) => {
                 expect(err).to.be.null;
                 expect(value).to.be.empty;
@@ -32,7 +32,7 @@ describe('string', () => {
             let testValue = '1value1';
             const schema = Joi.array()
                 .optional()
-                .seperator(',');
+                .separator(',');
             schema.validate(testValue, (err, value) => {
                 expect(err).to.be.null;
                 expect(value).to.not.be.empty;
@@ -46,7 +46,7 @@ describe('string', () => {
             let testValue = '1value1,2value2,3value3,4value4,5value5';
             const schema = Joi.array()
                 .optional()
-                .seperator(',');
+                .separator(',');
             schema.validate(testValue, (err, value) => {
                 expect(err).to.be.null;
                 expect(value).to.not.be.empty;
@@ -61,7 +61,7 @@ describe('string', () => {
             let testValue = ['1value1', '2value2', '3value3', '4value4,5value5'];
             const schema = Joi.array()
                 .optional()
-                .seperator(',');
+                .separator(',');
             schema.validate(testValue, (err, value) => {
                 expect(err).to.be.null;
                 expect(value).to.not.be.empty;
@@ -72,11 +72,11 @@ describe('string', () => {
             });
         });
 
-        it('validates multivlaue element string, non-standard multicharacter seperator, returns array with many values', (done) => {
+        it('validates multivlaue element string, non-standard multicharacter separator, returns array with many values', (done) => {
             let testValue = '1value1|s|2value2|s|3value3|s|4value4|s|5value5';
             const schema = Joi.array()
                 .optional()
-                .seperator('|s|');
+                .separator('|s|');
             schema.validate(testValue, (err, value) => {
                 expect(err).to.be.null;
                 expect(value).to.not.be.empty;
@@ -90,7 +90,7 @@ describe('string', () => {
         it('validates element number, returns error', (done) => {
             const schema = Joi.array()
                 .optional()
-                .seperator(',');
+                .separator(',');
             schema.validate(500, (err, value) => {
                 expect(err).to.not.be.null;
                 expect(value).to.not.be.null;

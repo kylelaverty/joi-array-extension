@@ -20,7 +20,7 @@ const BaseJoi = require('joi');
 const Extension = require('joi-array-extension');
 const Joi = BaseJoi.extend(Extension);
 
-const schema = Joi.array().seperator(',').items(...);
+const schema = Joi.array().separator(',').items(...);
 ```
 
 # API
